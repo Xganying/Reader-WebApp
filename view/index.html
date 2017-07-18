@@ -1,1 +1,37 @@
-index page
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta  name="viewport" content="width=device-with, initial-scale=1, user-scale=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>书城首页</title>
+		<link rel="stylesheet" type="text/css" href="/static/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+
+	</head>
+
+	<body>
+		<dit id="app" style=" overflow:hidden; "><!--  width:734px; -->
+			<% include include/header.html %>
+			<div style="width:1468px; transition-duration: .5s; transform: translate3d({{ position }}px, 0px, 0px); ">
+				<div class="container-wrap" style="width:734px; float:left; ">
+					<div class="container-scroll" style="top:0px; ">
+						<% include include/index-top.html %>
+						<% include include/index-hot.html %>
+						<% include include/index-recommend.html %>
+						<% include include/index-female.html %>
+						<% include include/index-male.html %>
+						<% include include/index-free.html %>
+						<% include include/index-bottom.html %>
+					</div>
+				</div>
+				<div style="width:734px; float:left; ">
+					<% include include/index-shelf.html %>
+				</div>
+			</div>
+		</dit>
+	</body>
+	<script type="text/javascript" src="/static/script/vue.js"></script>
+	<script type="text/javascript" src="/static/script/zepto.js"></script>
+	<script type="text/javascript" src="/static/script/pages/index.js"></script>
+
+</html>

@@ -46,6 +46,14 @@ exports.get_male_data = function(){
 	return content;
 }
 
+// time limit free
+exports.get_free_data = function(){
+	var content = fs.readFileSync('./mock/channel/male.json', 'utf-8');
+	return content;
+}
+
+
+//search
 exports.get_search_data = function(start, end, keyword){
 	return function(cb){
 		var http = require('http');

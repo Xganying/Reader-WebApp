@@ -80,9 +80,14 @@ app.use(controller.get('/male',  function*(){
 	this.body = yield render('male', {title:'Male Page'});
 }));
 
+//  time limit  free page
+app.use(controller.get('/free',  function*(){
+	this.set('Cache-Control', 'no-cache'); 
+	this.body = yield render('free', {title:'Free Page'});
+}));
 
 // ajax get detail date 
-// book
+//book
 app.use(controller.get('/ajax/book', function*(){
 	this.set ('Cache-Control', 'no-cache');
 	var params = querystring.parse(this.req._parsedUrl.query);
@@ -93,37 +98,37 @@ app.use(controller.get('/ajax/book', function*(){
 	this.body = service.get_book_data(id);
 }));
 
-// index
+// ajax  index
 app.use(controller.get('/ajax/index', function*(){
 	this.set('Cache-Control', 'no-cache'); 
 	this.body = service.get_index_data();
 }));
 
-// rank
+//  ajax  rank
 app.use(controller.get('/ajax/rank', function*(){
 	this.set('Cache-Control', 'no-cache'); 
 	this.body = service.get_rank_data();
 }));
 
-// category
+//  ajax  category
 app.use(controller.get('/ajax/category', function*(){
 	this.set('Cache-Control', 'no-cache'); 
 	this.body = service.get_category_data();
 }));
 
-// female
+// ajax  female
 app.use(controller.get('/ajax/female', function*(){
 	this.set('Cache-Control', 'no-cache'); 
 	this.body = service.get_female_data();
 }));
 
-// male
+//  ajax  male
 app.use(controller.get('/ajax/male', function*(){
 	this.set('Cache-Control', 'no-cache'); 
 	this.body = service.get_male_data();
 }));
 
-// search
+// ajax  search
 app.use(controller.get('/ajax/search', function*(){
 	this.set('Cache-Control', 'no-cache');
 	var querystring = require('querystring');
