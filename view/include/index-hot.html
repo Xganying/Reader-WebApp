@@ -7,19 +7,21 @@
 	<ul class="list-h5">
 		<li v-for="item in hot">
 			<div class="book-h5">
-				<div class="book-h5_cover">
-					<img alt="{{ item.title}}" v-bind: src="item.cover">
-					<!-- http://cover.read.duokan.com/mfsv2/download/fdsc3/p01pyLkuUTyq/hfjdzh92NRtNxW.jpg!s -->
-					<p class="book-h5_finish">完结</p>
-				</div>
-				<div class="book-h5_info">
-					<p class="book-h5_title">{{ item.title }} </p> <!-- 书名 作者 简介 标签 -->
-					<p class="book-h5_author">{{ item.authors }} </p>
-					<p class="book-h5_summary">{{ item.summary }} </p>
-					<p class="book-h5_wrap">
-						<div class="book-h5_tag" v-for="tag in item.tags">{{ tag }}</div>
-					</p>
-				</div>
+				<a href="/book?id={{ item.fiction_id }}">
+					<div class="book-h5_cover">
+						<img alt="{{ item.title }}" v-bind: src="{{item.cover}}">
+						<!-- http://cover.read.duokan.com/mfsv2/download/fdsc3/p01pyLkuUTyq/hfjdzh92NRtNxW.jpg!s -->
+						<p class="book-h5_finish">完结</p>
+					</div>
+					<div class="book-h5_info">
+						<p class="book-h5_title">{{ item.title }} </p> <!-- 书名 作者 简介 标签 -->
+						<p class="book-h5_author">{{ item.authors }} </p>
+						<p class="book-h5_summary">{{ item.summary }} </p>
+						<p class="book-h5_wrap">
+							<div class="book-h5_tag" v-for="tag in item.tags">{{ tag }}</div>
+						</p>
+					</div>
+				</a>
 			</div>
 		</li>
 	</ul>
