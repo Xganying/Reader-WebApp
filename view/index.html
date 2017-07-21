@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<dit id="app" style=" overflow:hidden; "><!--  width:734px; -->
+		<div id="app" style=" width:734px; overflow:hidden; ">
 			<% include include/header.html %>
 			<div style="width:1468px; transition-duration: .5s; transform: translate3d({{ position }}px, 0px, 0px); ">
 				<div class="container-wrap" style="width:734px; float:left; ">
@@ -28,7 +28,8 @@
 					<% include include/index-shelf.html %>
 				</div>
 			</div>
-		</dit>
+
+		</div>
 	</body>
 	<script type="text/javascript" src="/static/script/vue.js"></script>
 	<script type="text/javascript" src="/static/script/zepto.js"></script>
