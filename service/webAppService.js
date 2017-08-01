@@ -2,11 +2,6 @@
 
 var fs = require('fs');
 
-exports.get_test_data = function(){
-	var content = fs.readFileSync('./mock/test.json', 'utf-8');
-	return content;
-}
-
 exports.get_chapter_data = function(){
 	var content = fs.readFileSync('./mock/reader/chapter.json', 'utf-8');
 	return content;
@@ -68,7 +63,6 @@ exports.get_free_data = function(){
 	var content = fs.readFileSync('./mock/channel/male.json', 'utf-8');
 	return content;
 }
-
 
 //search
 exports.get_search_data = function(start, end, keyword){

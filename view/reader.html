@@ -86,51 +86,51 @@
 
         /*主体文字内容结构样式设置*/
         .m-read-content{
-            font-size: 14px;    /*设置字体大小*/
-            color: #555;        /*设置字体颜色*/
-            line-height: 31px;  /*设置行高*/
-            padding: 15px;      /*设置字体边距*/
+            font-size: 14px;      /*设置字体大小*/
+            color: #555;           /*设置字体颜色*/
+            line-height: 31px;   /*设置行高*/
+            padding: 15px;       /*设置字体边距*/
         }
         .m-read-content h4{     /*设置标题样式*/
             font-size: 20px;
             color: #736357;
             border-bottom: 1px solid #736357;
-            letter-spacing:2px; /*设置字符的间距*/
+            letter-spacing:2px;    /*设置字符的间距*/
             margin:0 0 1em 0;   /*设置标题与内容的距离*/
         }
         .m-read-content p{      /*设置段落的样式*/
-            text-indent: 2em;   /*段落缩进*/
-            margin:0.5em 0;     /*设置段落与段落之间的距离*/
+            text-indent: 2em;     /*段落缩进*/
+            margin:0.5em 0;      /*设置段落与段落之间的距离*/
             letter-spacing: 0;
             line-height:24px;
         }
 
         /*翻页按钮样式设置*/
-        .u-tab{                        /*设置翻页按钮的样式*/
+        .u-tab{                                      /*设置翻页按钮的样式*/
             height:34px;
-            margin: 10px auto;          /*设置与内容之间的距离,左右居中*/
-            line-height: 34px;          /*值与height一样，实现文字的垂直居中*/
-            border-radius: 8px;         /*设置圆角边框*/
+            margin: 10px auto;              /*设置与内容之间的距离,左右居中*/
+            line-height: 34px;                 /*值与height一样，实现文字的垂直居中*/
+            border-radius: 8px;              /*设置圆角边框*/
             border:1px solid #858382;  /*设置边框样式*/
-            font-size: 12px;            /*设置字号*/
-            background: #000;           /*设置背景颜色*/
-            opacity: 0.9;               /*设置透明度*/
+            font-size: 12px;                    /*设置字号*/
+            background: #000;              /*设置背景颜色*/
+            opacity: 0.9;                         /*设置透明度*/
         }
         .u-tab li{
             display: inline-block;
             width:49%;
             border-right:1px solid #858382;  /*按钮之间有距离*/
-            text-align: center;              /*设置字体居中显示*/
-            color: #fff;                     /*设置字体颜色*/
+            text-align: center;                         /*设置字体居中显示*/
+            color: #fff;                                   /*设置字体颜色*/
         }
         .u-tab li:nth-child(2){              /*设置第二个按钮没有白色线的间隔*/
             border-right:none;
         }
         .m-button-bar{                       /*设置按钮父级的样式（解决按钮太大的问题）*/
             width:70%;
-            max-width:800px;                 /*设置最大宽度*/
+            max-width:800px;               /*设置最大宽度*/
             padding:5px;
-            margin:0 auto;                   /*设置居中*/
+            margin:0 auto;                    /*设置居中*/
         }
         .m-button-bar button{
             background: none;
@@ -140,7 +140,7 @@
 
     /*底部栏控制面板样式设置*/
     .nav-pannel-bg{
-        position: fixed;  /*固定在底部*/
+        position: fixed;     /*固定在底部*/
         bottom:70px;      /*距离底部边距*/
         height:135px;
         width:100%;
@@ -178,7 +178,7 @@
         height:30px;
         border-radius: 15px;
         background: #fff;
-        display: inline-block;      /*排成一行*/
+        display: inline-block;        /*排成一行*/
         vertical-align: -14px;       /*设置圆圈垂直对齐*/
         margin-left: 14px;
     }
@@ -189,7 +189,7 @@
         border-radius:16px;
         border: 1px solid #ff7880;    /*#e9dfc7;  #ff7880*/
         display: inline-block;
-        top:-1px;                     /*调整位置*/
+        top:-1px;                              /*调整位置*/
         left:-1px;
     }
     #large-font{
@@ -198,7 +198,7 @@
     #small-font{
         font-size: 14px;
     }
-    .font-size-button{               /*设置大小按钮的样式*/
+    .font-size-button{                 /*设置大小按钮的样式*/
         background: none;           /*去掉默认的背景色*/
         border:1px solid #8c8c8c;
         color: #fff;
@@ -643,15 +643,15 @@
 
                //DOM 节点的缓存
                var Dom = {
-                   nav_title:$('#nav_title'),              //返回书架
+                   nav_title:$('#nav_title'),                            //返回书架
                    bottom_tool_bar:$('#bottom_tool_bar'),  //翻页：上一页，下一页
-                   prev_button:$('#prev-button'),          //上一页按钮
-                   next_button:$('#next-button'),          //下一页按钮
-                   top_nav : $('#top-nav'),                //顶部栏 ： 返回书架
-                   bg_container:$('#bg-container'),        //底部控制面板：背景
-                   bottom_nav : $('.bottom_nav'),          //底部栏
-                   night_button:$('#night-button'),         //底部栏：夜晚模式
-                   back_button : $('#back_button')//返回上级一页
+                   prev_button:$('#prev-button'),                //上一页按钮
+                   next_button:$('#next-button'),                //下一页按钮
+                   top_nav : $('#top-nav'),                           //顶部栏 ： 返回书架
+                   bg_container:$('#bg-container'),             //底部控制面板：背景
+                   bottom_nav : $('.bottom_nav'),               //底部栏
+                   night_button:$('#night-button'),              //底部栏：夜晚模式
+                   back_button : $('#back_button')              //返回上级一页
                };
 
                //程序初始化
